@@ -19,6 +19,8 @@ En este laboratorio se estudiaron las funciones básicas del manipulador industr
 | **Velocidad eje 2** | 160 °/s | 230 °/s | Hasta 720°/s |
 | **Velocidad eje 3** | 170 °/s | 260 °/s | Eje vertical hasta 700 mm/s |
 | **Velocidad eje 4 (muñeca/rotación herramienta)** | 340 °/s | 320 °/s | ± 1500 °/s |
+| **Velocidad eje 5** | 340 °/s | 320 °/s | N/A |
+| **Velocidad eje 6** | 520 °/s | 420 °/s | N/A |
 | **Tipo de montaje** | Piso, pared o invertido | Piso, pared, invertido o en ángulo | Piso o mesa |
 | **Controlador** | DX100 / DX200 | IRC5 Compact | EPSON RC+ 7.0 / Controlador integrado |
 | **Fuente de alimentación** | 200–230 V AC trifásico | 200–600 V AC trifásico | 100–240 V AC monofásico |
