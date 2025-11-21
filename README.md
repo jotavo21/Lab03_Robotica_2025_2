@@ -4,8 +4,6 @@
 
 En este laboratorio se estudiaron las funciones básicas del manipulador industrial EPSON T3-401S utilizando el software EPSON RC 7.0+. Para ello, se programó una rutina que permitiera al manipulador mover dos huevos de forma intercalada, replicando el movimiento del caballo de ajedrez dentro de una matriz de posiciones de 5×6 (una cubeta de huevos común). El objetivo fue que cada uno de los huevos recorriera las 30 posiciones de la cubeta.
 
-## Cuadro comparativo entre manipuladores
-
 ## Cuadro comparativo entre manipulador Motoman MH6, ABB IRB140 y EPSON T3-401S
 
 | **Característica** | **Motoman MH6 (Yaskawa)** | **ABB IRB 140 (ABB Robotics)** | **EPSON T3-401S (Epson Robotics)** |
@@ -30,3 +28,74 @@ En este laboratorio se estudiaron las funciones básicas del manipulador industr
 | **Aplicaciones típicas** | Manipulación general, soldadura, carga/descarga, ensamblaje, paletizado | Ensamblaje de precisión, manipulación, laboratorio, atornillado | Pick & place, electrónica, empaques, laboratorio |
 | **Ventajas destacadas** | Gran alcance y estructura robusta | Alta precisión y tamaño compacto | Ligero, rápido, eficiente y fácil de instalar |
 | **Limitaciones** | Repetibilidad menor que IRB 140 | Alcance corto | Carga y alcance reducidos; no para trabajos pesados |
+
+
+## Análisis comparativo entre EPSON RC+ 7.0, RoboDK y RobotStudio
+
+### 1. EPSON RC+ 7.0
+
+EPSON RC+ 7.0 es el entorno de programación nativo para los robots EPSON. Es un software diseñado para ofrecer una integración completa entre programación, simulación y control, priorizando la precisión y la estabilidad del funcionamiento real para los manipuladores de la compañia.
+
+#### **Ventajas**
+- Integración nativa con robots EPSON, lo que garantiza una alta correspondencia entre la simulación y el comportamiento real del manipulador.
+- Compatibilidad directa con el controlador EPSON T-Series y otros controladores de la familia RC.
+- Lenguaje SPEL+, optimizado para operaciones repetitivas y de alta velocidad.
+- Herramientas integradas para visión artificial, configuración de E/S y calibración del sistema.
+
+#### **Limitaciones**
+- Funciona exclusivamente con robots EPSON, lo que restringe su utilidad en entornos multimarca.
+- La capacidad de simulación es menor en comparación con plataformas avanzadas como RobotStudio.
+- Menor profundidad analítica en trayectorias complejas o procesos de alto grado de personalización.
+
+#### **Aplicaciones**
+- Ensamblaje electrónico.
+- Tareas repetitivas de alta velocidad.
+- Laboratorios de automatización ligera.
+- Procesos de Pick and Place de elementos pequeños.
+
+
+### 2. RoboDK
+
+RoboDK es una plataforma versátil orientada a la simulación de robots de diversos fabricantes. Se destaca por su flexibilidad y su capacidad de integrar múltiples marcas en un solo entorno.
+
+#### **Ventajas**
+- Plataforma multimarca que soporta robots de Yaskawa, ABB, Fanuc, KUKA, UR, Staubli, entre otros.
+- Permite visualizar el desempeño de robots de diferentes fabricantes dentro de un mismo entorno.
+- Incluye módulos CAD/CAM, facilitando la importación de trayectorias y geometrías complejas.
+- Licencia básica gratuita y costos de licencia accesibles.
+- Interfaz flexible que permite generar código para múltiples lenguajes y controladores.
+
+#### **Limitaciones**
+- La precisión de la simulación es menor que la obtenida en software nativo de cada fabricante.
+- No replica el comportamiento interno de los controladores reales; el código debe ser ajustado sobre el robot físico.
+- Dependencia de modelos cinemáticos genéricos, lo que puede generar diferencias con el robot real.
+
+#### **Aplicaciones**
+- Procesos CAD/CAM y mecanizado automatizado.
+- Investigación académica y formación en robótica industrial.
+- Integraciones multimarca y comparaciones de desempeño.
+
+---
+
+### 3. RobotStudio
+
+RobotStudio es el software de simulación oficial de ABB Robotics, considerado uno de los entornos más avanzados a nivel industrial gracias al uso del Virtual Controller.
+
+#### **Ventajas**
+- Desarrollado por ABB Robotics con compatibilidad exclusiva para robots ABB.
+- Incorpora el Virtual Controller, una réplica exacta del controlador físico IRC5/Omnicore, garantizando una simulación altamente precisa.
+- Detecta errores reales de programación y reproduce trayectorias con alta fidelidad.
+- Integración completa con el lenguaje RAPID, facilitando la transferencia directa de programas.
+- Herramientas avanzadas para análisis de colisiones, tiempos de ciclo y puesta en marcha virtual.
+
+#### **Limitaciones**
+- Solo funciona con robots ABB, lo que limita su aplicabilidad en entornos mixtos.
+- Requiere mayor capacidad de hardware debido a la complejidad gráfica y analítica.
+- Curva de aprendizaje más alta, especialmente para usuarios sin experiencia en RAPID.
+
+#### **Aplicaciones**
+- Programación offline profesional.
+- Simulación avanzada y optimización de celdas ABB.
+- Diagnóstico de errores y pruebas de integración antes de la puesta en marcha.
+- Entrenamiento especializado para operadores y programadores ABB.
+
