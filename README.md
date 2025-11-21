@@ -22,7 +22,7 @@ En este laboratorio se estudiaron las funciones básicas del manipulador industr
 | **Velocidad eje 5** | 340 °/s | 320 °/s | N/A |
 | **Velocidad eje 6** | 520 °/s | 420 °/s | N/A |
 | **Tipo de montaje** | Piso, pared o invertido | Piso, pared, invertido o en ángulo | Piso o mesa |
-| **Controlador** | DX100 / DX200 | IRC5 Compact | EPSON RC+ 7.0 / Controlador integrado |
+| **Controlador** | DX100 / DX200 | IRC5 Compact | EPSON T-Series All-in-One Controller |
 | **Fuente de alimentación** | 200–230 V AC trifásico | 200–600 V AC trifásico | 100–240 V AC monofásico |
 | **Grado de protección** | IP54 (cuerpo) / IP67 (muñeca) | IP54 (cuerpo) / IP67 (muñeca) | IP20 |
 | **Rango de temperatura de operación** | 0–45 °C | 5–45 °C | 5–40 °C |
