@@ -34,6 +34,8 @@ En este laboratorio se estudiaron las funciones básicas del manipulador industr
 
 En el entorno de programación EPSON RC+ 7.0+, los movimientos manuales del robot se llevan a cabo desde la ventana Robot Manager, específicamente en la sección Mover y enseñar. Cuando el usuario accede a esta pestaña, el sistema ofrece diferentes modos de operación que determinan cómo interpreta el robot las órdenes de movimiento manual. Los dos modos más comunes son el modo articular (Modo Articulación) y el modo cartesiano (Modo Mundo/Herramienta). En el primero, los desplazamientos afectan directamente a los ejes del robot  J1, J2, J3 y J4, permitiendo girar cada articulación de forma independiente. En contraste, en el modo cartesiano el movimiento se produce siguiendo las coordenadas espaciales del efector final: los ejes X, Y y Z para traslaciones, y los ejes RX, RY y RZ para rotaciones. De esta manera, el desplazamiento del robot responde a una representación espacial absoluta o relativa, dependiendo de si se trabaja en el sistema de referencia del mundo (World Frame) o del efector (Tool Frame).
 
+![image](https://github.com/jotavo21/Lab03_Robotica_2025_2/blob/main/Imagenes/Moveryensenar.png)
+
 El cambio entre estos modos se realiza directamente en la parte superior del panel Mover, donde la interfaz muestra el campo Modo, a través del cual es posible seleccionar Articulación, Mundo, Herramienta, Local o ECP. Al elegir Articulación, la barra de mandos muestra únicamente los controles asociados a cada articulación, permitiendo mover el robot incrementando o disminuyendo el ángulo de cada eje. Al seleccionar Mundo o Herramienta, la interfaz cambia para permitir movimientos en el espacio cartesiano, mostrando botones o controles asociados a los ejes X, Y, Z y a sus rotaciones correspondientes. 
 
 Una vez establecido el modo de operación, el usuario puede mover el robot ejecutando traslaciones en los ejes cartesianos X, Y y Z o moviendo cada articulación de forma independiente. La ejecución de cada movimiento puede realizarse de forma continúa o de forma incremental dependiendo de la configuración seleccionada en Distancia de Movimiento (Continuo, Largo, Medio y Corto).
@@ -45,7 +47,7 @@ En el software EPSON RC+ 7.0+, los movimientos manuales del robot se realizan ut
 
 Para cambiar entre los niveles Low y High, se debe ingresar al Robot Manager (presionando F6), luego se selecciona la pestaña Mover y enseñar. En esta ventana se encuentra la subsección denominada Mover, dentro del cual aparece el campo Velocidad. Este campo contiene un menú desplegable en el que se puede seleccionar directamente el nivel deseado. El ajuste elegido se aplica inmediatamente a todos los desplazamientos manuales que se realicen desde esa misma interfaz, incluyendo los movimientos continuos y los movimientos paso a paso asociados a la opción distancia de movimiento.
 
-
+![image](https://github.com/jotavo21/Lab03_Robotica_2025_2/blob/main/Imagenes/Moveryensenar.png)
 
 ## Análisis comparativo entre EPSON RC+ 7.0, RoboDK y RobotStudio
 
