@@ -122,10 +122,12 @@ RobotStudio es el software de simulación oficial de ABB Robotics, considerado u
 
 Para sostener el gripper, se tiene el siguiente acople de aluminio en el laboratorio (planos anexos):
 
+![image](https://github.com/jotavo21/Lab03_Robotica_2025_2/blob/main/Imagenes/AcopleGripper.png)
+
 
 Dicho acople sostiene el gripper sin problema, por lo que se diseñó una herramienta que pudiera soportar el acople. Para esto, se propuso la construcción de una herramienta de tipo arandela que utilizando tuercas se pueda insertar a presión en el brazo articular del robot. La herramienta diseñada es la siguiente (planos anexos):
 
-
+![image](https://github.com/jotavo21/Lab03_Robotica_2025_2/blob/main/Imagenes/Herramienta.png)
 
 ## Código utilizado para controlar el Manipulador
 
