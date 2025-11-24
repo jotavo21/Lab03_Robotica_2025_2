@@ -31,7 +31,7 @@ En este laboratorio se estudiaron las funciones básicas del manipulador industr
 
 ##	Descripción de las configuraciones HOME del EPSON T3-401S, indicando la posición de cada articulación.
 
-EN el caso del Robot de Epson, no viene una posición HOME definida, es más bien, una posición de referencia definida por wel usuario dentro del software Epson RC+. 
+EN el caso del Robot de Epson, no viene una posición HOME predefinida, es más bien, una posición de referencia definida por el usuario dentro del software Epson RC+. Permite, entonces, adaptar este punto de referencia a las necesidades específicas de cada aplicación. Su configuración se realiza directamente desde el Robot Manager del software Epson RC+, donde es posible ver los valores de cada articulación en pulsos de codificador, asignar la posición actual del robot como nuevo HOME y modificarla en cualquier momento. Además, el sistema permite definir el orden de movimiento de las articulaciones cuando el robot se dirige al HOME, garantizando que el retorno a esta posición se realice de manera segura y coherente con la disposición física de la célula de trabajo.
 
 
 ## Modo de operación de movimientos manuales
