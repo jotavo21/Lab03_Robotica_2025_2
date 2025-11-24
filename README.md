@@ -506,3 +506,11 @@ Function main
 Fend
 
 ```
+
+## Simulación e Implementación de trayectoria en manipulador EPSON T3-401S
+
+### Simulación en EPSON RC+ 7.5.2
+[![Ver video en YouTube](https://img.youtube.com/vi/PqE48nXHdXA/maxresdefault.jpg)](https://www.youtube.com/watch?v=yv0lNhRmCGE)
+
+### Implementación en manipulador EPSON T3-401S
+[![Ver video en YouTube](https://img.youtube.com/vi/VLUTuU5UzsA/maxresdefault.jpg)](https://www.youtube.com/watch?v=Mw_c045Ki5M)
