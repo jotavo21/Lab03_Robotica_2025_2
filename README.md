@@ -156,6 +156,10 @@ Dicho acople sostiene el gripper sin problema, por lo que se diseñó una herram
 
 ![image](https://github.com/jotavo21/Lab03_Robotica_2025_2/blob/main/Imagenes/Herramienta.png)
 
+## Configuración de E/S
+
+Para configurar una entrada In_9 y una salida Out_9 en el Editor de Etiquetas E/S de Epson RC+, primero abres esta herramienta desde el menú de I/O. Luego, en la lista de entradas, seleccionas el bit 9 y le asignas el nombre In_9, guardando el cambio; después haces lo mismo en la sección de salidas, eligiendo el bit 9 y nombrándolo Out_9. Una vez creadas estas etiquetas, el robot puede utilizarlas directamente en el programa para leer el estado del sensor (In_9) y activar la salida (Out_9). Esta salida, al estar asociada a las líneas neumáticas integradas del robot, permite controlar el flujo de aire hacia la chupa, haciendo que active la succión o la libere según la lógica del proceso.
+
 ## Código utilizado para controlar el Manipulador
 
 El código corresponde a la rutina principal que controla el manipulador para mover dos huevos en L dentro una cubeta de 5×6 posiciones. Al inicio se declara una variable global i de tipo entero (Global Integer i). La función main define la secuencia de trabajo del robot: primero se encienden los motores con Motor On, se establece el nivel de potencia en Power High y se configuran parámetros generales de movimiento mediante Accel 100, 100 (aceleración y desaceleración) y Speed 100 (velocidad base de los movimientos), ambos parámetros de movimiento se configuran dando un valor de 0 a 100, como un porcentaje. A continuación, el comando Home lleva al robot a la posición configurada como Home.
