@@ -130,3 +130,5 @@ Posteriormente, se utiliza la función Jump Pallet (1, n), para saltar entre dif
 A = [1, 12, 21, 28, 25, 14, 5, 8, 19, 10, 3, 6, 13, 22, 29, 20, 9, 2, 11, 18, 27, 16, 7, 4, 15, 24, 17, 26, 23, 30]
 
 B = [30, 19, 10, 3, 6, 17, 26, 23, 14, 5, 8, 1, 12, 21, 28, 25, 18, 29, 20, 9, 2, 11, 22, 13, 16, 27, 24, 15, 4, 7]
+
+Y finalmente, se conmuta el estado de la salida Out_9 para encender y apagar el gripper a conveniencia, dejando un delay de 0.5s usando Wait 0.5 para asegurarse que el gripper logre tomar correctamente el huevo.
