@@ -53,6 +53,26 @@ Para cambiar entre los niveles Low y High, se debe ingresar al Robot Manager (pr
 
 ![image](https://github.com/jotavo21/Lab03_Robotica_2025_2/blob/main/Imagenes/Moveryensenar.png)
 
+##	Descripción de las principales funcionalidades de EPSON RC+ 7.0, comunicación y procesos para ejecutar movimientos.
+A continuación se van a describir las principales funciones del Software tratadoe en este laboratorio, estas hacen referencia a las que se encuentran en la barra superior y que, de alguna u otra manera, interactuan directamente con el usuario y el Robot. 
+-Administrador de Robot (Robot Manager): Ventana central para ver y gestionar el estado del robot y sus parámetros; desde allí puedes abrir paneles de control, encender/apagar motores, editar y seleccionar dispositivos de control, ver listas de tareas y acceder a herramientas relacionadas con el controlador. Es el lugar desde el que se configuran y supervisan aspectos generales del manipulador. 
+
+-Abrir Ventana de Comando (Command Window / “Command”): Consola de comandos directa para enviar órdenes al controlador (por ejemplo MOTOR ON, PULSE, MOV, etc.), ejecutar macros y ver respuestas en texto. Es muy útil para pruebas rápidas, secuencias de arranque y diagnóstico inmediato. 
+
+-Monitor E/S (I/O Monitor): Muestra en tiempo real el estado de entradas y salidas digitales/analógicas del controlador; permite forzar una salida, comprobar etiquetas de E/S asignadas y verificar señales de sensores y actuadores durante la puesta en marcha o la depuración. 
+
+-ForceGuide: Módulo/solución de guía por fuerza de Epson (opcional) que añade detección y control de fuerzas en seis ejes; se usa para tareas que requieren tacto fino (ensamblajes, inserciones, control por contacto) y permite guiar el movimiento según lecturas de fuerza/torque. 
+
+-Monitor de Fuerza (Force Monitor): Pantalla y herramientas asociadas a ForceGuide que muestran lecturas de fuerza/torque, permiten configurar umbrales y activar rutinas de control por fuerza; útil para ajustar tolerancias y detectar colisiones o contactos fuera de lo esperado. 
+
+-Administrador de Tareas (Task Manager): Permite ver y controlar las tareas (threads) del robot: arrancar, parar, cambiar prioridad y depurar múltiples tareas SPEL+ simultáneas. Es la herramienta para gestionar concurrencia y flujos lógicos del programa del robot. 
+
+-Editor de Etiquetas E/S (I/O Label Editor / Editor de etiquetas E/S): Interfaz para crear/editar nombres amigables (etiquetas) para bits de entrada/salida; estas etiquetas luego aparecen en el I/O Monitor y en los programas, facilitando la lectura y evitando usar números crípticos de bit. 
+
+-Simulador (Simulator / 3D Simulator): Simulación 3D integrada para crear y validar la celda, probar programas offline, detectar colisiones, estimar tiempos de ciclo y verificar comportamiento sin tocar el robot físico. Permite “teach” virtual y conectar visión virtual para depurar la aplicación antes de instalar hardware. 
+
+-GUI Builder: Herramienta opcional para crear interfaces gráficas (formularios, botones, displays) integradas en RC+; sirve para construir pantallas de operador personalizadas (HMI) sin necesidad de herramientas externas, y conectarlas a variables/etiquetas del proyecto.
+
 ## Análisis comparativo entre EPSON RC+ 7.0, RoboDK y RobotStudio
 
 ### 1. EPSON RC+ 7.0
