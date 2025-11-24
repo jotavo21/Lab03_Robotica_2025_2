@@ -118,3 +118,14 @@ RobotStudio es el software de simulación oficial de ABB Robotics, considerado u
 - Diagnóstico de errores y pruebas de integración antes de la puesta en marcha.
 - Entrenamiento especializado para operadores y programadores ABB.
 
+
+## Código utilizado para controlar el Manipulador
+
+El código corresponde a la rutina principal que controla el manipulador para mover dos huevos en L dentro una cubeta de 5×6 posiciones. Al inicio se declara una variable global i de tipo entero (Global Integer i). La función main define la secuencia de trabajo del robot: primero se encienden los motores con Motor On, se establece el nivel de potencia en Power High y se configuran parámetros generales de movimiento mediante Accel 100, 100 (aceleración y desaceleración) y Speed 100 (velocidad base de los movimientos), ambos parámetros de movimiento se configuran dando un valor de 0 a 100, como un porcentaje. A continuación, el comando Home lleva al robot a la posición configurada como Home.
+
+Luego, se utliza la instrucción Pallet 1, Origen, PuntoX, PuntoY, 5, 6. Aquí se define una malla de 30 posiciones (5 filas por 6 columnas) donde el punto Origen corresponde a la esquina de referencia de la primera posición, mientras que PuntoX y PuntoY definen otros dos extremos que permiten definir el plano donde se contendrán las 30 posiciones equidistantes. A partir de estos tres puntos, el controlador calcula automáticamente la posición cartesiana de cada celda del pallet, numerándolas de 1 a 30. De esta forma, la llamada Pallet(1, n) devuelve la posición del huevo número n dentro de la cuadrícula, sin necesidad de programar manualmente cada coordenada.
+
+Posteriormente, se utiliza la función Jump Pallet (1, n), para saltar entre diferentes posiciones, se tienen los siguientes arreglos con las posiciones de cada huevo.
+
+A = [1, 12, 21, 28, 25, 14, 5, 8, 19, 10, 3, 6, 13, 22, 29, 20, 9, 2, 11, 18, 27, 16, 7, 4, 15, 24, 17, 26, 23, 30]
+B = [30, 19, 10, 3, 6, 17, 26, 23, 14, 5, 8, 1, 12, 21, 28, 25, 18, 29, 20, 9, 2, 11, 22, 13, 16, 27, 24, 15, 4, 7]
