@@ -512,6 +512,9 @@ Function main
 Fend
 
 ```
+## Diagrama de flujo de la rutina de movimiento de huevos con patrón de caballo de ajedrez
+
+![image](https://github.com/jotavo21/Lab03_Robotica_2025_2/blob/main/Diagrama%20de%20Flujo.png)
 
 ## Simulación e Implementación de trayectoria en manipulador EPSON T3-401S
 
