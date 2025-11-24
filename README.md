@@ -510,7 +510,8 @@ Fend
 ## Simulación e Implementación de trayectoria en manipulador EPSON T3-401S
 
 ### Simulación en EPSON RC+ 7.5.2
-[![Ver video en YouTube](https://img.youtube.com/vi/PqE48nXHdXA/maxresdefault.jpg)](https://www.youtube.com/watch?v=yv0lNhRmCGE)
+[![Video 1](https://img.youtube.com/vi/yv0lNhRmCGE/0.jpg)](https://www.youtube.com/watch?v=yv0lNhRmCGE)
 
 ### Implementación en manipulador EPSON T3-401S
-[![Ver video en YouTube](https://img.youtube.com/vi/VLUTuU5UzsA/maxresdefault.jpg)](https://www.youtube.com/watch?v=Mw_c045Ki5M)
+
+[![Video 2](https://img.youtube.com/vi/Mw_c045Ki5M/0.jpg)](https://www.youtube.com/watch?v=Mw_c045Ki5M)
