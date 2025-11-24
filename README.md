@@ -29,6 +29,10 @@ En este laboratorio se estudiaron las funciones básicas del manipulador industr
 | **Ventajas destacadas** | Gran alcance y estructura robusta | Alta precisión y tamaño compacto | Ligero, rápido, eficiente y fácil de instalar |
 | **Limitaciones** | Repetibilidad menor que IRB 140 | Alcance corto | Carga y alcance reducidos; no para trabajos pesados |
 
+##	Descripción de las configuraciones HOME del EPSON T3-401S, indicando la posición de cada articulación.
+
+EN el caso del Robot de Epson, no viene una posición HOME definida, es más bien, una posición de referencia definida por wel usuario dentro del software Epson RC+. 
+
 
 ## Modo de operación de movimientos manuales
 
