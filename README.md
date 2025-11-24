@@ -55,6 +55,7 @@ Para cambiar entre los niveles Low y High, se debe ingresar al Robot Manager (pr
 
 ##	Descripción de las principales funcionalidades de EPSON RC+ 7.0, comunicación y procesos para ejecutar movimientos.
 A continuación se van a describir las principales funciones del Software tratadoe en este laboratorio, estas hacen referencia a las que se encuentran en la barra superior y que, de alguna u otra manera, interactuan directamente con el usuario y el Robot. 
+
 -Administrador de Robot (Robot Manager): Ventana central para ver y gestionar el estado del robot y sus parámetros; desde allí puedes abrir paneles de control, encender/apagar motores, editar y seleccionar dispositivos de control, ver listas de tareas y acceder a herramientas relacionadas con el controlador. Es el lugar desde el que se configuran y supervisan aspectos generales del manipulador. 
 
 -Abrir Ventana de Comando (Command Window / “Command”): Consola de comandos directa para enviar órdenes al controlador (por ejemplo MOTOR ON, PULSE, MOV, etc.), ejecutar macros y ver respuestas en texto. Es muy útil para pruebas rápidas, secuencias de arranque y diagnóstico inmediato. 
@@ -72,6 +73,8 @@ A continuación se van a describir las principales funciones del Software tratad
 -Simulador (Simulator / 3D Simulator): Simulación 3D integrada para crear y validar la celda, probar programas offline, detectar colisiones, estimar tiempos de ciclo y verificar comportamiento sin tocar el robot físico. Permite “teach” virtual y conectar visión virtual para depurar la aplicación antes de instalar hardware. 
 
 -GUI Builder: Herramienta opcional para crear interfaces gráficas (formularios, botones, displays) integradas en RC+; sirve para construir pantallas de operador personalizadas (HMI) sin necesidad de herramientas externas, y conectarlas a variables/etiquetas del proyecto.
+
+Según la página de soporte de Epson, la comunicación entre el Robot y el Pc por medio de USB se da así: "EPSON RC+ se comunica con el controlador del robot por USB o Ethernet; al conectar por USB el PC establece enlace directo con el controlador RC (p. ej. RC700/RC90). El software reconoce el controlador y permite operaciones de programación, monitoreo y transferencia de proyectos."
 
 ## Análisis comparativo entre EPSON RC+ 7.0, RoboDK y RobotStudio
 
