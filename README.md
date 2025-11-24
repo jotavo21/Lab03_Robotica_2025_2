@@ -30,6 +30,14 @@ En este laboratorio se estudiaron las funciones básicas del manipulador industr
 | **Limitaciones** | Repetibilidad menor que IRB 140 | Alcance corto | Carga y alcance reducidos; no para trabajos pesados |
 
 
+## Niveles de velocidad para movimientos manuales
+
+En el software EPSON RC+ 7.0+, los movimientos manuales del robot se realizan utilizando dos niveles de velocidad predefinidos: Low y High. Estos niveles determinan la rapidez con la que se desplaza el robot cuando se mueve mediante las herramientas presentes en la pestaña de configuración del robot, lo que hace las veces de teach pendant. El nivel Low corresponde a una velocidad reducida, adecuada para aproximaciones finas y trabajos en zonas cercanas a obstáculos o al propio operador, mientras que el nivel High permite movimientos más rápidos, útiles cuando el robot se encuentra lejos de elementos de riesgo. Aun cuando se seleccione el nivel alto, los movimientos manuales siguen ejecutándose en modo de potencia baja.
+
+Para cambiar entre los niveles Low y High, se debe ingresar al Robot Manager (presionando F6), luego se selecciona la pestaña Mover y enseñar. En esta ventana se encuentra la subsección denominada Mover, dentro del cual aparece el campo Velocidad. Este campo contiene un menú desplegable en el que se puede seleccionar directamente el nivel deseado. El ajuste elegido se aplica inmediatamente a todos los desplazamientos manuales que se realicen desde esa misma interfaz, incluyendo los movimientos continuos y los movimientos paso a paso asociados a la opción distancia de movimiento.
+
+
+
 ## Análisis comparativo entre EPSON RC+ 7.0, RoboDK y RobotStudio
 
 ### 1. EPSON RC+ 7.0
