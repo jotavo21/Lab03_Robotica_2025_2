@@ -30,6 +30,15 @@ En este laboratorio se estudiaron las funciones básicas del manipulador industr
 | **Limitaciones** | Repetibilidad menor que IRB 140 | Alcance corto | Carga y alcance reducidos; no para trabajos pesados |
 
 
+## Modo de operación de movimientos manuales
+
+En el entorno de programación EPSON RC+ 7.0+, los movimientos manuales del robot se llevan a cabo desde la ventana Robot Manager, específicamente en la sección Mover y enseñar. Cuando el usuario accede a esta pestaña, el sistema ofrece diferentes modos de operación que determinan cómo interpreta el robot las órdenes de movimiento manual. Los dos modos más comunes son el modo articular (Modo Articulación) y el modo cartesiano (Modo Mundo/Herramienta). En el primero, los desplazamientos afectan directamente a los ejes del robot  J1, J2, J3 y J4, permitiendo girar cada articulación de forma independiente. En contraste, en el modo cartesiano el movimiento se produce siguiendo las coordenadas espaciales del efector final: los ejes X, Y y Z para traslaciones, y los ejes RX, RY y RZ para rotaciones. De esta manera, el desplazamiento del robot responde a una representación espacial absoluta o relativa, dependiendo de si se trabaja en el sistema de referencia del mundo (World Frame) o del efector (Tool Frame).
+
+El cambio entre estos modos se realiza directamente en la parte superior del panel Mover, donde la interfaz muestra el campo Modo, a través del cual es posible seleccionar Articulación, Mundo, Herramienta, Local o ECP. Al elegir Articulación, la barra de mandos muestra únicamente los controles asociados a cada articulación, permitiendo mover el robot incrementando o disminuyendo el ángulo de cada eje. Al seleccionar Mundo o Herramienta, la interfaz cambia para permitir movimientos en el espacio cartesiano, mostrando botones o controles asociados a los ejes X, Y, Z y a sus rotaciones correspondientes. 
+
+Una vez establecido el modo de operación, el usuario puede mover el robot ejecutando traslaciones en los ejes cartesianos X, Y y Z o moviendo cada articulación de forma independiente. La ejecución de cada movimiento puede realizarse de forma continúa o de forma incremental dependiendo de la configuración seleccionada en Distancia de Movimiento (Continuo, Largo, Medio y Corto).
+
+
 ## Niveles de velocidad para movimientos manuales
 
 En el software EPSON RC+ 7.0+, los movimientos manuales del robot se realizan utilizando dos niveles de velocidad predefinidos: Bajo y Alto. Estos niveles determinan la rapidez con la que se desplaza el robot cuando se mueve mediante las herramientas presentes en la pestaña de configuración del robot, lo que hace las veces de teach pendant. El nivel Low corresponde a una velocidad reducida, adecuada para aproximaciones finas y trabajos en zonas cercanas a obstáculos o al propio operador, mientras que el nivel High permite movimientos más rápidos, útiles cuando el robot se encuentra lejos de elementos de riesgo. Aun cuando se seleccione el nivel alto, los movimientos manuales siguen ejecutándose en modo de potencia baja.
